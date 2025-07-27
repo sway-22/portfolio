@@ -48,14 +48,14 @@ body {
     flex-grow: 0.4;
 }
 
-.herocard {
+#herocard {
     position: relative;
     top: 60px;
     border-radius: 50px;
     background: linear-gradient(180deg, #333 0%, #4D4D4D 100%);
     box-shadow: 0px 4px 4px 0px #171619;
     height: 512px;
-    width: 1000px;
+    width: 1100px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -64,10 +64,13 @@ body {
 #mypic {
     height: 450px;
     border-radius: 50%;
+    transition: transform;
+    transition-duration: 1s;
 }
 
 #mypic:hover {
     transform: scale(1.02);
+    border: 3px solid var(--secondary, #B06CDD);
 }
 
 .headertext {
@@ -102,4 +105,29 @@ padding: 0;
     border: 1px solid var(--secondary, #B06CDD);
     background: var(--action, #4D4D4D);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    transition: transform;
+    transition-duration: 1s;
+
 }
+
+.action:hover {
+    transform: scale(1.02);
+    border: 3px solid var(--secondary, #B06CDD);
+}
+
+.heroactiondescription {
+    line-height: 10px;
+    color: var(--text-sub, #BFBFBF);
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+}
+
+#actiondiv {
+    margin-left: 40px;
+    width: fit-content;
+    
+}
+
+
+
